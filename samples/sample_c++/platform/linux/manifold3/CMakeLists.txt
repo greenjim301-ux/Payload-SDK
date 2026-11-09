@@ -106,8 +106,6 @@ if (NOT EXECUTABLE_OUTPUT_PATH)
     set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR}/bin)
 endif()
 
-add_dependencies(${PROJECT_NAME} djisdk)
-
 target_include_directories(${PROJECT_NAME} PRIVATE ${OpenCV_INCLUDE_DIRS})
 
 if (OpenCV_FOUND)
