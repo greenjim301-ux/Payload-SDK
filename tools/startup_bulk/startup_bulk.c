@@ -42,6 +42,16 @@
 #include <libaio.h>
 #include <linux/usb/functionfs.h>
 
+#ifdef htole16
+#undef htole16
+#endif
+#define htole16(x) ((uint16_t)(x))
+
+#ifdef htole32
+#undef htole32
+#endif
+#define htole32(x) ((uint32_t)(x))
+
 #define EP_IN_IDX 1
 #define EP_OUT_IDX 2
 
