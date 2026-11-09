@@ -50,10 +50,6 @@ set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/../common/3rdparty)
 
 target_link_libraries(${PROJECT_NAME} m dl)
 
-add_custom_command(TARGET ${PROJECT_NAME}
-        PRE_LINK COMMAND cmake ..
-        WORKING_DIRECTORY ${CMAKE_BINARY_DIR})
-
 # set app.json and build_dpk.sh path
 set(JSON_FILE ${CMAKE_CURRENT_SOURCE_DIR}/app_json/app.json)
 set(SCRIPT_FILE ${CMAKE_CURRENT_SOURCE_DIR}/../../../../../tools/build_dpk/build_dpk.sh)

@@ -118,7 +118,7 @@ if [ "$platform" == "" ]; then
     echo "Please check app.json"
     echo "Document Specification: samples/sample_c/platform/linux/manifold3/app_json/README.md"
     exit 1
-elif [[ "$platform" != "manifold3" ]]; then
+elif [[ "$platform" != "manifold3" && "$platform" != "rk3568" ]]; then
     echo "Error, platform field is not manifold3"
     echo "Please check app.json"
     echo "Document Specification: samples/sample_c/platform/linux/manifold3/app_json/README.md"
