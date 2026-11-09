@@ -37,7 +37,7 @@ extern "C" {
 #define USER_APP_ID                 "201117"
 #define USER_APP_KEY                "bb6f322952c0ae34c3ca6d734557e36"
 #define USER_APP_LICENSE            "EFFdXKoEEPrX0TMKioEE4h33SkCQB37GolfC6B2ncURKlE9q59BEHPk5OOShYhJRrUNba0uw/iJzuPmta449kYS3GM4kzojb39hcmluVjBMQJeHdwF2Kr1qSw6ET6ReykBeqds4LRPjDOAatvHje666FHYeRjaZInAlPMhE01wfXWfaPVG3Yr7Pf8g1ru4m5ej2QU+lrC/GiEH3hRHlfnxj0Wn8EvuXj2/oyaUDIMEa5r9l/FnkEE22CluV4zKAflDDBvjN/ugUEzaKhEY6ZlTyWCy1+0e+DLIsvk2iVx2Z0E6ftb0IY72iSzUiSk0k9bJxI7Bv90GVWW4YYVx9jBg=="
-#define USER_DEVELOPER_ACCOUNT      "greenjim301@dji.com"
+#define USER_DEVELOPER_ACCOUNT      "greenjim301@gmail.com"
 #define USER_BAUD_RATE              "460800"
 
 /* Exported types ------------------------------------------------------------*/

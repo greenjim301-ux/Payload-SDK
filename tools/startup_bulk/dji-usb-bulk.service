@@ -1,0 +1,13 @@
+[Unit]
+Description=DJI PSDK USB Bulk Gadget Service for RK3568
+After=local-fs.target
+DefaultDependencies=no
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/local/bin/dji_bulk_gadget.sh start
+ExecStop=/usr/local/bin/dji_bulk_gadget.sh stop
+
+[Install]
+WantedBy=multi-user.target

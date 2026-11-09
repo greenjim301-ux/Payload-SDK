@@ -215,7 +215,7 @@ T_DjiReturnCode HalUsbBulk_ReadData(T_DjiUsbBulkHandle usbBulkHandle, uint8_t *b
         ret = read(((T_HalUsbBulkObj *) usbBulkHandle)->ep2, buf, len);
         if (ret < 0) {
             USER_LOG_ERROR("read ret %d %d %s\n", ret, errno, strerror(errno));
-            return DJI_ERROR_SYSTEM_MODULE_CODE_SYSTEM_ERROR;
+            return DJI_ERROR_SYSTEM_MODULE_CODE_SUCCESS;
         } else {
             *realLen = ret;
         }
@@ -240,6 +240,7 @@ T_DjiReturnCode HalUsbBulk_GetDeviceInfo(T_DjiHalUsbBulkDeviceInfo *deviceInfo)
     deviceInfo->channelInfo[DJI_HAL_USB_BULK_NUM_1].endPointIn = LINUX_USB_BULK2_END_POINT_IN;
     deviceInfo->channelInfo[DJI_HAL_USB_BULK_NUM_1].endPointOut = LINUX_USB_BULK2_END_POINT_OUT;
 
+    // This bulk channel is used to obtain DJI perception data.
     deviceInfo->channelInfo[DJI_HAL_USB_BULK_NUM_2].interfaceNum = LINUX_USB_BULK3_INTERFACE_NUM;
     deviceInfo->channelInfo[DJI_HAL_USB_BULK_NUM_2].endPointIn = LINUX_USB_BULK3_END_POINT_IN;
     deviceInfo->channelInfo[DJI_HAL_USB_BULK_NUM_2].endPointOut = LINUX_USB_BULK3_END_POINT_OUT;
