@@ -1,0 +1,38 @@
+{
+    "user_app_id": "201117",
+    "firmware_version": "01.00.00.00",
+    "is_ai_rendering": "false",
+    "platform": "rk3568",
+    "name":{
+        "name_cn": "psdk-test",
+        "name_en": "psdk-test",
+        "name_jp": "psdk-test",
+        "name_fr": "psdk-test"
+    },
+    "description": {
+        "description_cn": [
+            "psdk test application for rk3568"
+        ],
+        "description_en": [
+            "psdk test application for rk3568"
+        ],
+        "description_jp": [
+            "psdk test application for rk3568"
+        ],
+        "description_fr": [
+            "psdk test application for rk3568"
+        ]
+    },
+    "maintainer": {
+        "maintainer_cn": "大疆创新科技有限公司",
+        "maintainer_en": "DJI Innovation Technology Co., Ltd.",
+        "maintainer_jp": "大疆イノベーションテクノロジー有限会社",
+        "maintainer_fr": "Société à Responsabilité Limitée DJI Innovation Technology"
+    },
+    "ver_min": "00.00.00.00",
+    "ver_max": "99.99.99.99",
+    "bin": "../../../../../../build/bin/dji_sdk_demo_on_rk3568",
+    "userconfig": [
+        "../../../../../../samples"
+    ]
+}

@@ -27,8 +27,8 @@ endif ()
 
 if (USE_SYSTEM_ARCH MATCHES LINUX)
     add_definitions(-DSYSTEM_ARCH_LINUX)
-    add_subdirectory(samples/sample_c/platform/linux/manifold3)
-    add_subdirectory(samples/sample_c++/platform/linux/manifold3)
+    add_subdirectory(samples/sample_c/platform/linux/rk3568)
+    add_subdirectory(samples/sample_c++/platform/linux/rk3568)
 
     execute_process(COMMAND uname -m OUTPUT_VARIABLE DEVICE_SYSTEM_ID)
     if (DEVICE_SYSTEM_ID MATCHES x86_64)
