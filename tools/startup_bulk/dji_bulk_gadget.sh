@@ -71,8 +71,8 @@ start_gadget() {
     mkdir -p /dev/usb-ffs/bulk1 /dev/usb-ffs/bulk2
     umount /dev/usb-ffs/bulk1 2>/dev/null || true
     umount /dev/usb-ffs/bulk2 2>/dev/null || true
-    mount -t functionfs bulk1 /dev/usb-ffs/bulk1
-    mount -t functionfs bulk2 /dev/usb-ffs/bulk2
+    mount -o mode=0777 -t functionfs bulk1 /dev/usb-ffs/bulk1
+    mount -o mode=0777 -t functionfs bulk2 /dev/usb-ffs/bulk2
 
     # Launch startup_bulk daemon to write descriptors to ep0
     if [ -x "$STARTUP_BULK_BIN" ]; then
